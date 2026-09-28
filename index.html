@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoxAI Shield — Hybrid Edge + Origin DDoS Protection</title>
+<meta name="description" content="FoxAI Shield: hybrid edge + origin DDoS protection and WAF. Cloudflare Worker shield with rate limiting, behavioral bans, threat-intel sync, and LXC-backed origin fallback.">
+<style>
+  :root { --bg: #0a0e14; --card: #11161f; --accent: #ff6b35; --text: #e6e9ef; --muted: #8b93a3; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+  .hero { text-align: center; padding: 96px 24px 48px; max-width: 720px; }
+  .badge { display: inline-block; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 6px 16px; margin-bottom: 24px; }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 800; letter-spacing: -1px; line-height: 1.1; }
+  h1 span { color: var(--accent); }
+  p.sub { color: var(--muted); font-size: 1.1rem; margin-top: 16px; line-height: 1.6; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; max-width: 900px; width: 100%; padding: 24px; }
+  .card { background: var(--card); border: 1px solid #1e2532; border-radius: 12px; padding: 24px; }
+  .card h3 { font-size: 1rem; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 0.9rem; line-height: 1.5; }
+  .links { display: flex; gap: 12px; margin: 32px 0 64px; flex-wrap: wrap; justify-content: center; }
+  a.btn { text-decoration: none; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; }
+  a.primary { background: var(--accent); color: #111; }
+  a.ghost { border: 1px solid #2a3342; color: var(--text); }
+  footer { color: var(--muted); font-size: 0.8rem; padding-bottom: 32px; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="badge">Edge + Origin &bull; Zero Server Cost</div>
+    <h1>FoxAI <span>Shield</span></h1>
+    <p class="sub">Hybrid DDoS protection and WAF. A Cloudflare Worker shield with rate limiting, behavioral bans, threat-intel sync, and an LXC-backed origin fallback.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>&#128737; Edge Shield</h3><p>Cloudflare Worker layer filters floods, bots and scanners before they reach origin.</p></div>
+    <div class="card"><h3>&#128680; WAF Signatures</h3><p>SQLi, XSS, path traversal, command injection, LFI/RFI and scanner fingerprints blocked at the edge.</p></div>
+    <div class="card"><h3>&#128202; Threat Intel</h3><p>Hourly IP-reputation and signature sync keeps every endpoint up to date.</p></div>
+    <div class="card"><h3>&#128260; Origin Fallback</h3><p>LXC-backed origin keeps the site alive when the edge is under heavy fire.</p></div>
+  </div>
+  <div class="links">
+    <a class="btn primary" href="https://github.com/Can-5/fox-shield">View on GitHub</a>
+    <a class="btn ghost" href="https://github.com/Can-5/foxai-browser">FoxAI Browser</a>
+  </div>
+  <footer>FoxAI &mdash; built in the open.</footer>
+</body>
+</html>
